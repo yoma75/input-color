@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);     
+}
+
+form .email-box {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+form .email-box i {
+    background-color:  #f86b0d;
+    width: 50px;
+    line-height: 50px; 
+    color: white;
+    font-size: 20px;
+}
+
+form .email-box .tbox,
+form .email-box .btn {
+    border: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s;
+}
+
+form .email-box .tbox {
+    width: 0;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+
+form .email-box .btn {
+    padding: 0 10px;
+    color: white;
+    background-color: #ff6702;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 20px;    
+}
+
+form .email-box:hover > .tbox,
+form .email-box:focus {
+    padding: 18px;
+    width: 300px;
+}
+
